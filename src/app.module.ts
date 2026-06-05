@@ -5,6 +5,7 @@ import { MovieModule } from './movie/movie.module'
 import { ConfigModule } from '@nestjs/config'
 import { ReviewModule } from './review/review.module'
 import { ActorModule } from './actor/actor.module'
+import { PrismaModule } from './prisma/prisma.module'
 
 @Module({
 	imports: [
@@ -12,6 +13,7 @@ import { ActorModule } from './actor/actor.module'
 			isGlobal: true,
 		}),
 
+		PrismaModule,
 		MovieModule,
 		ReviewModule,
 		ActorModule,
